@@ -6,6 +6,13 @@
 
 Automatische controle voor Growatt zonne-omvormers via Home Assistant.
 
+
+## 📸 Dashboard
+
+![Growatt Dashboard](dashboard-growatt.png)
+
+![Energy Overview](dashboard-energy.png)
+
 ## Het probleem
 
 Growatt omvormers hebben soms een firmware/hardware fout waardoor ze 's morgens niet automatisch opstarten wanneer er voldoende zonlicht is. Ze blijven hangen in "waiting" status in plaats van automatisch over te schakelen naar "normal" (actief).
