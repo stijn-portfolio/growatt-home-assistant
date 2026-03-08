@@ -11,7 +11,6 @@ Automatische controle voor Growatt zonne-omvormers via Home Assistant.
 
 ![Growatt Dashboard](dashboard-growatt.png)
 
-![Energy Overview](dashboard-energy.png)
 
 ## Het probleem
 
