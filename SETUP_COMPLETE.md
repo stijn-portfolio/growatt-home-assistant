@@ -1,4 +1,4 @@
-# Setup Complete - Growatt Home Assistant Integration
+# Setup complete - Growatt Home Assistant integration
 
 Dit document beschrijft hoe het systeem is opgezet en werkt als referentie voor toekomstige configuratie.
 
@@ -12,7 +12,7 @@ Het systeem controleert automatisch elk uur (tussen configureerbare tijden) of o
 
 ---
 
-## Home Assistant Installatie
+## Home Assistant installatie
 
 ### Vereisten
 
@@ -20,7 +20,7 @@ Het systeem controleert automatisch elk uur (tussen configureerbare tijden) of o
 - Advanced SSH & Web Terminal add-on
 - Python 3 (komt standaard met HA OS)
 
-### Stap 1: Repository clonen
+### Stap 1: repository clonen
 
 Via de Web Terminal in Home Assistant:
 
@@ -30,7 +30,7 @@ git clone https://github.com/SDBeu/growatt-homeAssistant.git
 cd growatt-homeAssistant
 ```
 
-### Stap 2: Dependencies installeren
+### Stap 2: dependencies installeren
 
 ```bash
 pip install -r requirements.txt
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 **Opmerking:** De waarschuwing over `root` user is normaal in Home Assistant en kan genegeerd worden.
 
-### Stap 3: Configuratie aanmaken
+### Stap 3: configuratie aanmaken
 
 ```bash
 cp config.example.ini config.ini
@@ -52,7 +52,7 @@ Vul je eigen gegevens in:
 
 **Belangrijke opmerking:** `config.ini` staat in `.gitignore` en wordt NIET naar git gepusht (bevat privégegevens).
 
-### Stap 4: Test het script
+### Stap 4: test het script
 
 ```bash
 python3 growatt_auto_start.py
@@ -66,7 +66,7 @@ Je zou output moeten zien zoals:
 2025-11-19 12:01:16 - INFO - Device: XXXXXX | Status: Normal (1) | Power: XX.XW
 ```
 
-### Stap 5: Shell command aanmaken
+### Stap 5: shell command aanmaken
 
 Maak of edit `/config/shell_command.yaml`:
 
@@ -98,7 +98,7 @@ shell_command: !include shell_command.yaml
 - Settings → System → Restart
 - Wacht tot HA opnieuw opgestart is
 
-### Stap 8: Automation aanmaken
+### Stap 8: automation aanmaken
 
 1. Ga naar **Settings** → **Automations & Scenes**
 2. Klik **+ Create Automation** → **Create new automation**
@@ -123,7 +123,7 @@ mode: single
 
 5. Sla op en geef een naam (bijv. "Growatt Auto Start")
 
-### Stap 9: Test de automation
+### Stap 9: test de automation
 
 - Ga naar de automation
 - Klik op de 3 puntjes (⋮) → **Run**
@@ -352,7 +352,7 @@ mv growatt_auto_start.log growatt_auto_start.log.old
 
 ## Technische details
 
-### API Rate limits (Growatt OpenAPI v4)
+### API rate limits (Growatt OpenAPI v4)
 
 | Endpoint | Limit |
 |----------|-------|

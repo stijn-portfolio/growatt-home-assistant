@@ -22,7 +22,7 @@ Stap-voor-stap gids om het Growatt auto-start script op je Raspberry Pi te insta
 4. Noteer je **API token** (32 karakters)
 5. Bewaar deze veilig - je hebt hem zo nodig
 
-## Stap 2: Project installeren op Raspberry Pi
+## Stap 2: project installeren op Raspberry Pi
 
 ### SSH verbinding maken
 
@@ -67,7 +67,7 @@ sudo apt install python3-pip -y
 pip3 install -r requirements.txt
 ```
 
-## Stap 4: Configuratie instellen
+## Stap 4: configuratie instellen
 
 ```bash
 # Kopieer het voorbeeld config bestand
@@ -95,7 +95,7 @@ exclude_noah = true
 
 Opslaan: `Ctrl+X`, dan `Y`, dan `Enter`
 
-## Stap 5: Script testen
+## Stap 5: script testen
 
 ### Handmatig uitvoeren
 
@@ -127,7 +127,7 @@ cat growatt_auto_start.log
 tail -f growatt_auto_start.log
 ```
 
-## Stap 6: Automatisch uitvoeren met cron
+## Stap 6: automatisch uitvoeren met cron
 
 ### Crontab bewerken
 
@@ -168,7 +168,7 @@ Opslaan: `Ctrl+X`, dan `Y`, dan `Enter`
 crontab -l
 ```
 
-## Stap 7: Verificatie
+## Stap 7: verificatie
 
 ### Wacht tot de volgende geplande tijd
 
